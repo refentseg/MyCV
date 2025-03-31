@@ -1,0 +1,250 @@
+body {
+    padding: 20px;
+    color: black;
+}
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+/* ============================================================== Search ======================================== */
+.search-form{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+/* ============================================================== About ========================================== */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: none;
+}
+.role{
+    border: none;
+}
+.contact-info {
+    display: flex;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.contact-details {
+    margin-left: -40px;
+    list-style: none;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin-left: 0px;
+    margin-right: 15px;
+    font-size: 16px;
+} 
+.contact-item i {
+    width: 28px;
+    height: 28px;
+    color: black;
+}
+.social{
+    font-size: 20px;
+}
+.contact-item :hover{
+    color: green;
+}
+
+/* ================================================== Skills ================================================== */
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #5a5a5a;
+    bottom: -5px;
+    left: 0;
+}
+
+.skills-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: white;
+    width:250px;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.skill-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*===================================================== Education =================================================*/
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: calc(100% - 20px);
+    width: 2px;
+    background-color: #333;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* Circle */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.timeline-details {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.timeline-details h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.timeline-details h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.timeline-date {
+    min-width: 200px;
+    text-align: right;
+    margin-right: 10vh;
+}
+
+.timeline-date p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.details-line {
+    height: 15px;
+    background-color: #f1f1f1;
+    margin: 8px 0;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+/* ============================================================= Contact Form ======================================== */
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-form input{
+    height: 30px;
+    width: 600px;
+}
+
+.contact-form textarea{
+    width: 600px;
+    height: 90px;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.contact-form button{
+    height: 30px;
+    width: 80px;
+    color: #f1f1f1;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    
+}
+.contact-form button:hover{
+    background-color: green;
+    
+}
+
+/* ================================================== Footer =============================================== */
+.footer {
+    width: 100%;
+    border-top: 1px solid #9ca3af;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px; 
+}
+
+.footer-text {
+    font-size: 0.875rem; 
+    color: black;
+}
