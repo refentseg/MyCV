@@ -14,13 +14,7 @@ h2 {
     justify-content: center;
 }
 /* ============================================================== About ========================================== */
-.hero {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    border: none;
-}
+
 .role{
     border: none;
 }
@@ -78,13 +72,6 @@ h2 {
     left: 0;
 }
 
-.skills-container {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-    gap: 25px;
-}
-
 .skill-card {
     background-color: white;
     width:250px;
@@ -103,8 +90,10 @@ h2 {
 }
 
 .skill-icon {
-    width: 70px;
-    height: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
     margin-bottom: 15px;
     object-fit: contain;
 }
